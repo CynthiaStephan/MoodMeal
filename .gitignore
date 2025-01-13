@@ -1,0 +1,33 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# MongoDB
+db/
+
+# Environnement local
+.env
+.env.* 
+
+# Dossiers de build
+dist/
+build/
+coverage/
+
+# IDEs et éditeurs de code
+.vscode/
+.idea/
+
+# Système d'exploitation
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Autres fichiers
+*.tgz
