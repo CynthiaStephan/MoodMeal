@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json());
 
-const mongoUrl = process.env.MONGO_URL || 'mongodb://localhost:27017/mydb';
+const mongoUrl = process.env.MONGO_URL || 'mongodb://localhost:27017/moodmeal';
 
 mongoose.connect(mongoUrl)
   .then(() => console.log('Connecté à MongoDB'))

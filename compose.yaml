@@ -9,7 +9,7 @@ services:
     volumes:
       - .:/var/www
     environment:
-      - MONGO_URL=mongodb://mongo:27017/mydb
+      - MONGO_URL=mongodb://mongo:27017/moodmeal
     depends_on:
       - mongo
 
