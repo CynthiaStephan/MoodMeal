@@ -1,6 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
+const userRoutes = require('./app/routes/userRoutes')
+
 
 app.use(express.json());
 
@@ -13,6 +15,8 @@ mongoose.connect(mongoUrl)
 app.get('/', (req, res) => {
   res.json({ message: 'Test réussi !' });
 });
+
+app.use('api/users', userRoutes)
 
 const PORT = 3000;
 
