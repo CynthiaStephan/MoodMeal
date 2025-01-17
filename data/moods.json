@@ -1,0 +1,62 @@
+[
+    {
+        "mood": "stress",
+        "description": "Des plats réconfortants pour te détendre.",
+        "suggestedTags": ["comforting", "quick"],
+        "funMessage": [
+            "Respire... et savoure chaque bouchée ! 🧘",
+            "Ce plat est aussi relaxant qu'un massage. 💆",
+            "Détends-toi, ton assiette prend soin de toi. 🍲"
+        ]
+    },
+    {
+        "mood": "happy",
+        "description": "Des recettes légères et pleines de saveurs pour accompagner ta bonne humeur.",
+        "suggestedTags": ["light", "spicy"],
+        "funMessage": [
+            "Fais danser tes papilles avec cette recette ! 🎉",
+            "Ton sourire illumine la cuisine ! 😄",
+            "Cette recette est aussi joyeuse que toi ! 🌈"
+        ]
+    },
+    {
+        "mood": "bored",
+        "description": "Des plats créatifs pour stimuler tes papilles et ton esprit.",
+        "suggestedTags": ["creative", "unique"],
+        "funMessage": [
+            "Laisse libre cours à ta créativité culinaire ! 🎨",
+            "Ce plat pourrait être ton prochain chef-d'œuvre. 🍛",
+            "Transforme ton ennui en aventure gustative ! 🌟"
+        ]
+    },
+    {
+        "mood": "tired",
+        "description": "Des plats nourrissants et énergisants pour récupérer rapidement.",
+        "suggestedTags": ["nourishing", "quick"],
+        "funMessage": [
+            "Une dose d'énergie dans ton assiette ! ⚡",
+            "Ce plat te fera bondir de vitalité ! 🚀",
+            "Recharge tes batteries avec cette recette ! 🔋"
+        ]
+    },
+    {
+        "mood": "sad",
+        "description": "Des plats réconfortants et apaisants pour te redonner le sourire.",
+        "suggestedTags": ["comforting", "soft"],
+        "funMessage": [
+            "Un câlin en forme de plat ! 🤗",
+            "Cette recette est là pour te redonner le sourire. 😊",
+            "Parfois, une bouchée suffit pour retrouver la joie. 🍪"
+        ]
+    },
+    {
+        "mood": "adventurous",
+        "description": "Des recettes audacieuses pour explorer de nouvelles saveurs.",
+        "suggestedTags": ["exotic", "bold"],
+        "funMessage": [
+            "Prépare-toi pour un voyage culinaire hors des sentiers battus ! 🌍",
+            "Découvre des saveurs aussi audacieuses que toi. 🧭",
+            "Chaque bouchée est une aventure ! 🍽️"
+        ]
+    }
+]

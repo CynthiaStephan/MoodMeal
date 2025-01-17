@@ -1,0 +1,221 @@
+[
+    {
+        "name": "Mac and Cheese crémeux",
+        "description": "Un plat réconfortant pour les moments de stress.",
+        "ingredients": ["pâtes", "fromage cheddar", "crème", "lait", "beurre"],
+        "tags": ["comforting", "quick", "creamy"],
+        "instructions": [
+            "1. Faites cuire les pâtes.",
+            "2. Faites fondre le fromage et la crème dans une poêle.",
+            "3. Mélangez les pâtes avec la sauce au fromage.",
+            "4. Servez chaud."
+        ],
+        "image": "",
+        "timeToPrepare": 15
+    },
+    {
+        "name": "Salade de quinoa épicée",
+        "description": "Une recette légère pour un mood heureux.",
+        "ingredients": ["quinoa", "tomates cerises", "poivrons", "avocat", "piment rouge"],
+        "tags": ["light", "spicy", "fresh"],
+        "instructions": [
+            "1. Cuire le quinoa.",
+            "2. Couper les légumes en morceaux.",
+            "3. Mélanger tous les ingrédients dans un bol.",
+            "4. Ajouter du jus de citron et des épices."
+        ],
+        "image": "",
+        "timeToPrepare": 20
+    },
+    {
+        "name": "Pizza maison créative",
+        "description": "Une pizza créative pour stimuler ta créativité.",
+        "ingredients": ["pâte à pizza", "sauce tomate", "fromage", "champignons", "roquette"],
+        "tags": ["creative", "unique", "fun"],
+        "instructions": [
+            "1. Préparez la pâte à pizza.",
+            "2. Étalez la sauce tomate sur la pâte.",
+            "3. Ajoutez les ingrédients et enfournez.",
+            "4. Ajoutez la roquette après cuisson."
+        ],
+        "image": "",
+        "timeToPrepare": 30
+    },
+    {
+        "name": "Smoothie énergisant",
+        "description": "Un smoothie nourrissant pour recharger tes batteries.",
+        "ingredients": ["banane", "épinards", "lait d'amande", "protéine en poudre"],
+        "tags": ["nourishing", "quick", "healthy"],
+        "instructions": [
+            "1. Mixez tous les ingrédients dans un blender.",
+            "2. Servez frais."
+        ],
+        "image": "",
+        "timeToPrepare": 5
+    },
+    {
+        "name": "Soupe aux lentilles réconfortante",
+        "description": "Un bol de réconfort pour les moments tristes.",
+        "ingredients": ["lentilles", "carottes", "céleri", "bouillon de légumes"],
+        "tags": ["comforting", "soft", "hearty"],
+        "instructions": [
+            "1. Faites cuire les lentilles dans le bouillon.",
+            "2. Ajoutez les légumes coupés en morceaux.",
+            "3. Laissez mijoter jusqu'à ce que les légumes soient tendres."
+        ],
+        "image": "",
+        "timeToPrepare": 40
+    },
+    {
+        "name": "Bowl de poke tropical",
+        "description": "Un repas frais pour les explorateurs gastronomiques.",
+        "ingredients": ["riz basmati", "saumon cru", "mangue", "avocat", "sauce soja"],
+        "tags": ["exotic", "bold", "fresh"],
+        "instructions": [
+            "1. Cuire le riz basmati.",
+            "2. Couper le saumon, l'avocat et la mangue en dés.",
+            "3. Assembler dans un bol et ajouter la sauce soja."
+        ],
+        "image": "",
+        "timeToPrepare": 25
+    },
+    {
+        "name": "Tacos au poulet épicé",
+        "description": "Des tacos rapides et savoureux pour un mood heureux.",
+        "ingredients": ["poulet", "tortillas", "fromage", "avocat", "salsa épicée"],
+        "tags": ["quick", "spicy", "savory"],
+        "instructions": [
+            "1. Faites cuire le poulet épicé.",
+            "2. Réchauffez les tortillas.",
+            "3. Garnissez avec le poulet, fromage, avocat et salsa."
+        ],
+        "image": "",
+        "timeToPrepare": 15
+    },
+    {
+        "name": "Gâteau au chocolat fondant",
+        "description": "Un dessert réconfortant pour te remonter le moral.",
+        "ingredients": ["chocolat", "beurre", "sucre", "œufs", "farine"],
+        "tags": ["comforting", "sweet", "decadent"],
+        "instructions": [
+            "1. Faites fondre le chocolat et le beurre.",
+            "2. Mélangez avec les œufs, sucre et farine.",
+            "3. Faites cuire au four jusqu'à ce qu'il soit fondant."
+        ],
+        "image": "",
+        "timeToPrepare": 30
+    },
+    {
+        "name": "Omelette aux légumes",
+        "description": "Une omelette légère pour te sentir bien.",
+        "ingredients": ["œufs", "tomates", "poivrons", "épinards"],
+        "tags": ["light", "healthy", "savory"],
+        "instructions": [
+            "1. Battez les œufs et ajoutez les légumes coupés.",
+            "2. Faites cuire dans une poêle chaude."
+        ],
+        "image": "",
+        "timeToPrepare": 10
+    },
+    {
+        "name": "Curry de pois chiches épicé",
+        "description": "Un curry réconfortant avec un twist épicé.",
+        "ingredients": ["pois chiches", "lait de coco", "épices", "épinards"],
+        "tags": ["comforting", "spicy", "vegetarian"],
+        "instructions": [
+            "1. Faites cuire les pois chiches.",
+            "2. Ajoutez le lait de coco et les épices.",
+            "3. Ajoutez les épinards et laissez mijoter."
+        ],
+        "image": "",
+        "timeToPrepare": 30
+    },
+    {
+        "name": "Salade de fruits frais",
+        "description": "Un dessert léger pour te remettre d'une longue journée.",
+        "ingredients": ["fraises", "kiwi", "banane", "menthe"],
+        "tags": ["light", "fresh", "sweet"],
+        "instructions": [
+            "1. Coupez les fruits en morceaux.",
+            "2. Mélangez-les et ajoutez de la menthe."
+        ],
+        "image": "",
+        "timeToPrepare": 10
+    },
+    {
+        "name": "Gratin dauphinois",
+        "description": "Un gratin savoureux pour un moment réconfortant.",
+        "ingredients": ["pommes de terre", "crème", "fromage râpé", "ail"],
+        "tags": ["comforting", "creamy", "hearty"],
+        "instructions": [
+            "1. Coupez les pommes de terre en fines tranches.",
+            "2. Faites cuire avec de la crème et de l'ail.",
+            "3. Ajoutez du fromage râpé et faites gratiner."
+        ],
+        "image": "",
+        "timeToPrepare": 50
+    },
+    {
+        "name": "Burgers végétariens maison",
+        "description": "Des burgers végétariens pour une pause créative.",
+        "ingredients": ["pain à burger", "pois chiches", "avocat", "fromage"],
+        "tags": ["creative", "vegetarian", "savory"],
+        "instructions": [
+            "1. Faites cuire les pois chiches.",
+            "2. Mélangez-les avec les épices et formez des galettes.",
+            "3. Faites cuire les galettes et assemblez les burgers."
+        ],
+        "image": "",
+        "timeToPrepare": 30
+    },
+    {
+        "name": "Ratatouille",
+        "description": "Un plat provençal riche en saveurs.",
+        "ingredients": ["courgettes", "aubergines", "tomates", "poivrons", "herbes de Provence"],
+        "tags": ["healthy", "vegetarian", "savory"],
+        "instructions": [
+            "1. Faites cuire les légumes dans de l'huile d'olive.",
+            "2. Ajoutez les herbes et laissez mijoter."
+        ],
+        "image": "",
+        "timeToPrepare": 40
+    },
+    {
+        "name": "Salade d'avocat et crevettes",
+        "description": "Un plat frais pour l'aventurier gastronomique.",
+        "ingredients": ["avocat", "crevettes", "citron", "salade verte"],
+        "tags": ["exotic", "fresh", "bold"],
+        "instructions": [
+            "1. Mélangez les crevettes cuites et l'avocat coupé.",
+            "2. Assaisonnez avec du citron et des épices."
+        ],
+        "image": "",
+        "timeToPrepare": 15
+    },
+    {
+        "name": "Pad Thaï",
+        "description": "Un plat thaïlandais épicé pour l'âme aventureuse.",
+        "ingredients": ["nouilles de riz", "crevettes", "cacahuètes", "sauce soja", "citron vert"],
+        "tags": ["spicy", "exotic", "savory"],
+        "instructions": [
+            "1. Faites cuire les nouilles.",
+            "2. Faites sauter les crevettes et ajoutez la sauce.",
+            "3. Mélangez les nouilles et servez avec des cacahuètes."
+        ],
+        "image": "",
+        "timeToPrepare": 30
+    },
+    {
+        "name": "Tiramisu",
+        "description": "Un dessert italien classique pour remonter le moral.",
+        "ingredients": ["mascarpone", "café", "biscuits à la cuillère", "cacao"],
+        "tags": ["comforting", "sweet", "decadent"],
+        "instructions": [
+            "1. Trempez les biscuits dans le café.",
+            "2. Alternez les couches de biscuits et de mascarpone.",
+            "3. Saupoudrez de cacao et réfrigérez."
+        ],
+        "image": "",
+        "timeToPrepare": 25
+    }
+]

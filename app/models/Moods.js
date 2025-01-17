@@ -1,11 +1,6 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
-const moodSchema = new mongooose.Shema({
-    _id: {
-        type: String,
-        required: true,
-        index: true
-    },
+const moodSchema = new mongoose.Schema({
     mood: {
         type: String,
         required: true
@@ -15,12 +10,13 @@ const moodSchema = new mongooose.Shema({
         required: true
     },
     suggestedTags: {
-        type: [string],
+        type: [String],
         required: true,
         default: []
     },
     funMessage: {
-        type: [String]
+        type: [String],
+        default: []
     }
 })
 

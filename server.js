@@ -1,7 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
-const userRoutes = require('./app/routes/userRoutes')
+const userRoutes = require('./app/routes/userRoutes');
+const moodRoutes = require('./app/routes/moodRoutes');
+const recipeRoutes = require('./app/routes/recipeRoutes');
 
 
 app.use(express.json());
@@ -16,7 +18,9 @@ app.get('/', (req, res) => {
   res.json({ message: 'Test réussi !' });
 });
 
-app.use('api/users', userRoutes)
+app.use('/api/users', userRoutes);
+app.use('/api/mood', moodRoutes);
+app.use('/api/recipe', recipeRoutes);
 
 const PORT = 3000;
 
