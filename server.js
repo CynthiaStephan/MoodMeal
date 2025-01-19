@@ -19,8 +19,8 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/users', userRoutes);
-app.use('/api/mood', moodRoutes);
-app.use('/api/recipe', recipeRoutes);
+app.use('/api/moods', moodRoutes);
+app.use('/api/recipes', recipeRoutes);
 
 const PORT = 3000;
 
