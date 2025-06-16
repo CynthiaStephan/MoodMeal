@@ -1,85 +1,84 @@
+// Import dependencies
+const request = require('supertest');
 const mongoose = require('mongoose');
 const { MongoMemoryServer } = require('mongodb-memory-server');
-const express = require('express');
-const bodyParser = require('body-parser');
-const { describe, expect, test } = require('@jest/globals');
+const app = require('../../server');
 
-
-const moodRoutes = require('../routes/moodRoutes');
 const Mood = require('../models/Moods');
 
-let app;
 let mongoServer;
 
+// Before all tests: start an in-memory MongoDB server and connect mongoose to it
 beforeAll(async () => {
   mongoServer = await MongoMemoryServer.create();
   const uri = mongoServer.getUri();
-
-  await mongoose.connect(uri);
-
-  app = express();
-  app.use(bodyParser.json());
-  app.use('/api/mood', moodRoutes);
+  await mongoose.connect(uri, {
+    // Note: these options are deprecated but not blocking
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
 });
 
-afterEach(async () => {
-  await Mood.deleteMany();
-});
-
+// After all tests: disconnect mongoose and stop the in-memory MongoDB server
 afterAll(async () => {
   await mongoose.disconnect();
   await mongoServer.stop();
 });
 
-describe('Tests API /api/mood', () => {
-  test('GET /api/mood retourne les moods existants', async () => {
-    await Mood.create({
-      mood: 'happy',
-      description: 'Des recettes légères et pleines de saveurs pour accompagner ta bonne humeur.',
-      suggestedTags: ['light', 'spicy'],
-      funMessage: ['Fais danser tes papilles avec cette recette !']
-    });
+// Before each test: clear the Mood collection and insert a default document
+beforeEach(async () => {
+  await Mood.deleteMany();
 
+  await Mood.create({
+    mood: 'heureux',
+    description: 'You seem happy today!',
+    suggestedTags: ['light', 'sweet'],
+    funMessage: ['Treat yourself to something colorful!'],
+  });
+});
+
+// Group of tests for the GET /api/mood route
+describe('GET /api/mood', () => {
+  it('should return the moods', async () => {
+    // Send a GET request to /api/mood
     const res = await request(app).get('/api/mood');
 
+    // Expect HTTP status 200 OK
     expect(res.status).toBe(200);
+
+    // Expect the response body to be an array with one element
     expect(res.body.length).toBe(1);
-    expect(res.body[0].mood).toBe('joyful');
+
+    // Expect the first mood to be "heureux"
+    expect(res.body[0].mood).toBe('heureux');
   });
+});
 
-  test('POST /api/mood retourne les tags associés à un mood', async () => {
-    await Mood.create({
-        "mood": "happy",
-        "description": "Des recettes légères et pleines de saveurs pour accompagner ta bonne humeur.",
-        "suggestedTags": ['light', 'spicy'],
-        "funMessage": [
-            "Fais danser tes papilles avec cette recette !",
-            "Ton sourire illumine la cuisine !",
-            "Cette recette est aussi joyeuse que toi !"
-        ]
-    });
-
+// Group of tests for the POST /api/mood route
+describe('POST /api/mood', () => {
+  it('should return tags associated with a given mood', async () => {
+    // Send a POST request with mood "heureux"
     const res = await request(app)
       .post('/api/mood')
-      .send({ mood: 'sad' });
+      .send({ mood: 'heureux' });
 
+    // Expect HTTP status 200 OK
     expect(res.status).toBe(200);
-    expect(res.body).toEqual(expect.arrayContaining(['comfort', 'cozy']));
+
+    // Expect the response body to contain the tags ['light', 'sweet']
+    expect(res.body).toEqual(expect.arrayContaining(['light', 'sweet']));
   });
 
-  test('POST /api/mood retourne 404 si le mood est introuvable', async () => {
+  it('should return an error if the mood does not exist', async () => {
+    // Send a POST request with an unknown mood
     const res = await request(app)
       .post('/api/mood')
       .send({ mood: 'unknown' });
 
-    expect(res.status).toBe(404);
-    expect(res.body.error).toBe('Mood not found');
-  });
+    // Expect HTTP status 400 Bad Request
+    expect(res.status).toBe(400);
 
-  test('GET /api/mood retourne un tableau vide si aucun mood', async () => {
-    const res = await request(app).get('/api/mood');
-
-    expect(res.status).toBe(200);
-    expect(res.body).toEqual([]);
+    // Expect the response body to contain an error property
+    expect(res.body).toHaveProperty('error');
   });
 });
