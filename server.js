@@ -15,12 +15,12 @@ mongoose.connect(mongoUrl)
   .catch(err => console.error('Erreur de connexion :', err));
 
 app.get('/', (req, res) => {
-  res.json({ message: 'Test réussi !' });
+  res.json({ message: `Connecté à l'API` });
 });
 
 app.use('/api/users', userRoutes);
-app.use('/api/moods', moodRoutes);
-app.use('/api/recipes', recipeRoutes);
+app.use('/api/mood', moodRoutes);
+app.use('/api/recipe', recipeRoutes);
 
 const PORT = 3000;
 
